@@ -76,10 +76,10 @@ switch (dayOfWeek){
 //         Потрібно знайти та вивести максимальне число з тих двох.
 //         Також потрібно врахувати коли введені рівні числа.
 
-let num1 = 5;
-let num2 = 6;
+let num1 = 6;
+let num2 = 5;
 
-if (num1 > num2 && num2 < num1){
+if (num1 > num2){
     console.log(num1)
 }else if (num2 > num1){
     console.log(num2)
@@ -92,5 +92,16 @@ else{
 //     - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
 //         за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподыбне, тобто кастується до false)
 
-let a = prompt('Enter something') || 'default';
+let a = 0;
+a = null || 'default'
+console.log(a)
+a = NaN || 'default'
+console.log(a)
+a = undefined || 'default'
+console.log(a)
+a = '' || 'default'
+console.log(a)
+a = 1 || 'default'
+console.log(a)
+a = 'string' || 'default'
 console.log(a)
