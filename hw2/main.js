@@ -107,61 +107,61 @@ console.log(book5);
 // - Створити масив з 10 об'єктами які описують сутність "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
 
 users = [
-    user0 = {
+    {
     name : 'Vasya',
     username : 'Vasya228',
     password : 1222
     },
 
-    user1 = {
+    {
     name : 'Vitya',
     username : 'Vitya228',
     password : 1233
     },
 
-    user2 = {
+    {
     name : 'Vova',
     username : 'Vova228',
     password : 1234
     },
 
-    user3 = {
+    {
         name : 'Dasha',
         username : 'Dasha228',
         password : 2352
     },
 
-    user4 = {
+    {
         name : 'Sasha',
         username : 'Sasha228',
         password : 8234
     },
 
-    user5 = {
+    {
         name : 'Vika',
         username : 'Vika228',
         password : 2325
     },
 
-    user6 = {
+    {
         name : 'Oleg',
         username : 'Oleg228',
         password : 6235
     },
 
-    user7 = {
+    {
         name : 'Artem',
         username : 'Artem228',
         password : 2523
     },
 
-    user8 = {
+    {
         name : 'Ruslan',
         username : 'Ruslan228',
         password : 2532
     },
 
-    user9 = {
+    {
         name : 'Nastya',
         username : 'Nastya228',
         password : 2352
