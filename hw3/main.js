@@ -105,3 +105,4 @@ a = 1 || 'default'
 console.log(a)
 a = 'string' || 'default'
 console.log(a)
+
