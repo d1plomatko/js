@@ -1,0 +1,29 @@
+.products {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+.product-card {
+    width: 300px;
+    height: 400px;
+    background-color: gray;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+
+}
+
+.product-card > h3 {
+    text-transform: uppercase;
+    color: white;
+    margin: 30px 0;
+
+}
+
+.product-image {
+    width: 80%;
+
+}
