@@ -39,11 +39,11 @@ let simpsons = [
 // Проітерувати його, створиши для кожного об'єкту  масиву <div class='member'> та наповнити його данними з об'єкту.
 //
 //     Якщо людською мовою: під кожного члена родини зробити блок та наповнити його інформацією з цього об'єкту
-
-let wrapper = document.createElement('div');
-wrapper.className = 'wrapper';
-document.body.appendChild(wrapper);
-
+//
+// let wrapper = document.createElement('div');
+// wrapper.className = 'wrapper';
+// document.body.appendChild(wrapper);
+//
 // for (let simpson of simpsons) {
 //
 //     let div = document.createElement('div');
@@ -65,7 +65,7 @@ document.body.appendChild(wrapper);
 //     div.append(h3, h4, p, img);
 //
 // }
-//
+
 
 
 // Цикл в циклі
@@ -208,7 +208,7 @@ let coursesArray = [
 //
 // let clone = block.cloneNode(true);
 // document.body.appendChild(clone)
-//
+// //
 
 // - Є масив:
 //     ['Main','Products','About us','Contacts']
@@ -275,7 +275,7 @@ let coursesAndDurationArray = [
 //     p.innerText = `Duration is ${course.monthDuration} months.`;
 //     div.appendChild(p);
 // }
-
+//
 
 
 // -----------
@@ -291,60 +291,90 @@ let coursesAndDurationArray = [
 // text.innerText = 'hello okten';
 // textWrapper.appendChild(text);
 //
-// let btn = document.createElement('button');
-// btn.innerText = 'delete text';
-// textWrapper.appendChild(btn);
+// let btn1 = document.createElement('button');
+// btn1.innerText = 'delete text';
+// textWrapper.appendChild(btn1);
 //
-// btn.onclick = function (){
+// btn1.onclick = function (){
 //     textWrapper.removeChild(text);
 // }
 
 //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
 
-let age = document.getElementById('input');
-let btn = document.getElementById('btn');
-
-btn.onclick = function (){
-    if (age.value > 0 && age.value < 18) {
-        alert('you are to young');
-    } else if (age.value <= 0){
-        alert('invalid input');
-    } else {
-        alert('you are old enough');
-    }
-}
+// let ageWrapper = document.createElement('div');
+// ageWrapper.className = 'age-wrapper';
+// document.body.appendChild(ageWrapper);
+//
+// let ageInput = document.createElement('input');
+// ageInput.type = 'number';
+// ageInput.placeholder = 'age';
+// ageWrapper.appendChild(ageInput);
+//
+// let ageButton = document.createElement('button');
+// ageButton.innerText = 'Submit';
+// ageWrapper.appendChild(ageButton);
+//
+//
+// ageButton.onclick = function (){
+//     if (ageInput.value > 0 && ageInput.value < 18) {
+//         alert('you are to young');
+//     } else if (ageInput.value <= 0){
+//         alert('invalid input');
+//     } else {
+//         alert('you are old enough');
+//     }
+// }
 
 // *** Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
 
-
-let tableWrapper = document.createElement('div');
-tableWrapper.className = 'table-wrapper';
-document.body.appendChild(tableWrapper);
-
-let row = document.getElementById('row');
-let column = document.getElementById('column');
-let info = document.getElementById('info');
-let button = document.getElementById('button');
-
-button.onclick = function (e){
-
-    e.preventDefault();
-
-    let table = document.createElement('table');
-    tableWrapper.appendChild(table);
-
-    for (let i = 0; i < row.value; i++){
-        let tableRow = document.createElement('tr');
-        table.appendChild(tableRow);
-
-        for (let i = 0; i < column.value; i++){
-            let tableColumn = document.createElement('td');
-            tableColumn.innerText = info.value;
-            tableRow.appendChild(tableColumn);
-        }
-
-    }
-
-}
+// let inputWrapper = document.createElement('div');
+// inputWrapper.className = 'input-wrapper';
+// document.body.appendChild(inputWrapper);
+//
+// let tableWrapper = document.createElement('div');
+// tableWrapper.className = 'table-wrapper';
+// document.body.appendChild(tableWrapper);
+//
+// let column = document.createElement('input');
+// column.type = 'number';
+// column.placeholder = 'column number';
+// inputWrapper.appendChild(column);
+//
+// let row = document.createElement('input');
+// row.type = 'number';
+// row.placeholder = 'row number';
+// inputWrapper.appendChild(row);
+//
+// let info = document.createElement('input');
+// info.type = 'text';
+// info.placeholder = 'info';
+// inputWrapper.appendChild(info);
+//
+// let tableButton = document.createElement('button');
+// tableButton.innerText = 'create table';
+// inputWrapper.appendChild(tableButton);
+//
+//
+// tableButton.onclick = function (e){
+//
+//     e.preventDefault();
+//
+//     let table = document.createElement('table');
+//     tableWrapper.appendChild(table);
+//
+//     for (let i = 0; i < column.value; i++){
+//         let tableRow = document.createElement('tr');
+//         table.appendChild(tableRow);
+//
+//         for (let i = 0; i < row.value; i++){
+//             let tableColumn = document.createElement('td');
+//             tableColumn.innerText = info.value;
+//             tableRow.appendChild(tableColumn);
+//         }
+//
+//     }
+//
+// }
+//
