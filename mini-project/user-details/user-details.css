@@ -1,0 +1,135 @@
+body {
+    background-color: aqua;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+
+    font-family: 'Roboto', sans-serif;
+    background-color: #16c8c8;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 35px;
+    font-weight: bold;
+
+    box-shadow: 0 1px 10px black;
+
+}
+
+.container {
+
+    width: 1000px;
+    max-width: 100%;
+    margin: 30px auto;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.user-card {
+
+    width: 400px;
+    height: 600px;
+
+    border: 2px solid silver;
+    box-sizing: border-box;
+    padding: 20px;
+
+    background-color: white;
+
+    text-align: center;
+
+}
+
+
+h4 {
+
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.posts {
+
+    width: 90%;
+    margin: 30px auto;
+
+
+}
+
+.btn {
+
+    width: 100%;
+    padding: 20px;
+
+    border-radius: 0;
+    border: 2px solid silver;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: white;
+
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all .2s linear;
+
+}
+
+.btn:hover {
+
+    background-color: #16c8c8;
+    border: none;
+
+}
+
+
+
+.post-wrapper {
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 5px 0;
+
+    align-items: center;
+
+}
+
+.title {
+
+    background-color: white;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid silver;
+}
+
+
+.posts a {
+
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+
+    border: 2px solid silver;
+    box-sizing: border-box;
+
+    padding: 5px 10px;
+
+    background-color: white;
+
+    transition: all .2s linear;
+
+}
+
+.posts a:hover {
+
+    border: none;
+    background-color: #16c8c8;
+
+}

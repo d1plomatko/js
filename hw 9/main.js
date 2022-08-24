@@ -376,5 +376,7 @@ let coursesAndDurationArray = [
 //
 //     }
 //
-// }
+//     tableButton.disabled = true;
 //
+// }
+
