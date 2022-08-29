@@ -58,6 +58,7 @@ function divCreator(item, childDiv, fatherDiv) {
 
 let userPosts = document.querySelector('.posts');
 let btn = document.querySelector('.btn');
+let postDiv = document.querySelector('.posts-wrapper');
 
 btn.onclick = function (){
 
@@ -67,22 +68,21 @@ btn.onclick = function (){
 
             for (let post of posts) {
 
-                let postDiv = document.createElement('div');
-                postDiv.classList.add('post-wrapper')
-                userPosts.appendChild(postDiv);
-
                 let postTitle = post.title.split('')[0].toUpperCase() + post.title.substring(1);
 
                 let titleDiv = document.createElement('div');
                 titleDiv.classList.add('title')
-                titleDiv.innerText = `${postTitle}`
                 postDiv.appendChild(titleDiv);
+
+                let p = document.createElement('p');
+                p.innerText = `${postTitle}`;
+                titleDiv.appendChild(p)
 
                 let anchor = document.createElement('a');
                 anchor.href = `../post-details/post-details.html?id=${post.id}`;
                 anchor.target = '_blank';
                 anchor.innerText = 'post details';
-                postDiv.appendChild(anchor);
+                titleDiv.appendChild(anchor);
             }
 
         })
